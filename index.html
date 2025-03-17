@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramen Rater</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #ramen-list {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            padding: 10px;
+            border-bottom: 2px solid black;
+        }
+        #ramen-list img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            cursor: pointer;
+            border-radius: 8px;
+            border: 2px solid transparent;
+        }
+        #ramen-list img:hover {
+            border-color: black;
+        }
+        #ramen-details {
+            margin: 20px auto;
+            padding: 10px;
+            width: 300px;
+            border: 1px solid hsl(0, 25%, 98%);
+            border-radius: 8px;
+        }
+        #ramen-details img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        form {
+            margin-top: 20px;
+            display: none;
+        }
+        input, textarea, button {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            padding: 8px;
+        }
+        button {
+            background: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ramen Rater</h1>
+    
+    <div id="ramen-list"></div>
+    
+    <div id="ramen-details">
+        <img src="placeholder.jpg" alt="Ramen Image">
+        <h2 id="ramen-name">Insert Name Here</h2>
+        <h3 id="ramen-restaurant">Insert Restaurant Here</h3>
+        <p><strong>Rating:</strong> <span id="ramen-rating">0</span> / 10</p>
+        <p><strong>Comment:</strong> <span id="ramen-comment">Insert comment here</span></p>
+    </div>
+
+    <button id="add-ramen">Add New Ramen</button>
+    
+    <form id="ramen-form">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="restaurant" placeholder="Restaurant" required>
+        <input type="url" id="image" placeholder="Image URL" required>
+        <input type="number" id="rating" placeholder="Rating" min="0" max="10" required>
+        <textarea id="comment" placeholder="Comment"></textarea>
+        <button type="submit">Create</button>
+    </form>
+
+    <script src="index.js"></script>
+</body>
+</html>
