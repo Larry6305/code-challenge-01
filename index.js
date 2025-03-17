@@ -13,21 +13,21 @@ let ramenData = [
     {
         name: "Shoyu Ramen",
         restaurant: "Ichiran",
-        image: "https://img.hellofresh.com/f_auto,fl_lossy,h_640,q_auto,w_1200/hellofresh_s3/image/62164054b9b4ec558362b243-0b7c599a.jpg",
+        image: "./images/shoyu.jpg",
         rating: 9,
         comment: "Delicious and well-balanced broth!"
     },
     {
         name: "Tonkotsu Ramen",
         restaurant: "Ippudo",
-        image: "https://www.craftycookbook.com/wp-content/uploads/2023/04/tonkotsu.jpg",
+        image: "./images/gyukotsu.jpg",
         rating: 8,
         comment: "Rich and creamy broth!"
     },
     {
         name: "Miso Ramen",
         restaurant: "Ramen Nagi",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSovKueJMTYpDGYhltiTPYjHnQ0ldBn7K0yBw&secho ",
+        image: "./images/naruto.jpg",
         rating: 10,
         comment: "The best miso ramen I've had!"
     }
