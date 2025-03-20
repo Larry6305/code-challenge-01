@@ -23,10 +23,10 @@ Once the app is running, navigate to the homepage where you can:
    1. Browse a list of ramen dishes and see user ratings and reviews.
    2. Rate ramen dishes that you've tried by giving them a star rating and a review.
 
-License
+##License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Acknowledgments
+##Acknowledgments
 Thanks to the ramen community for inspiring this project!
 
 
